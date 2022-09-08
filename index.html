@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Prejeto Filtro previsão do tempo - JS</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Hepta+Slab:400,700|Lato:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="line"></div>
+     <div class="container header--area">
+          <div class="menu">
+               <nav>
+                    <ul>
+                         <li><a href="">Projeto</a></li>
+                    </ul>
+               </nav>
+          </div>
+     </div>   
+</header>
+<main>
+      <section class="banner">
+           <div class="slider"> 
+                <div class="sliderarea">
+                     <h2>Histórico Previsão de Tempo</h2>
+                   <label>          
+                      <input id="data" type="date" name="data" >
+                      <input id="hora" type="time" name="hora" required>
+                      <button type="button" onclick="myFunction()">OK</button>
+                      <div class="section-resultados">
+                            <div class="section-resultado">
+                            <h4>Data</h4>
+                            <p id="resultadoData"></p>
+                            </div>
+                            <div class="section-resultado">
+                            <h4>Hora</h4>
+                            <p id="resultadoHora"></p>
+                            </div>
+                            <div class="section-resultado">
+                            <h4>Temperatua</h4>
+                            <p id="resultadoTemperatura"></p>
+                            </div>
+                            <div class="section-resultado">
+                             <h4>Chuva</h4>
+                             <p id="resultadoChuva"></p>
+                             </div>
+                             <div class="section-resultado">
+                             <h4>Umidade</h4>
+                             <p id="resultadoUmidade"></p>
+                            </div>
+                     </div>
+                  </label>
+                </div>
+           </div>
+      </section>
+</main>        
+<script type="text/javascript" src="dadosjson.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</section>
+</body>
+</html>
